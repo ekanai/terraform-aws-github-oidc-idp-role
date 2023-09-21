@@ -1,7 +1,9 @@
 {
-  "extends": [
-    "config:base"
-  ],
   "labels": ["renovate"],
-  "rebaseWhen": "never"
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "automerge": true
+    }
+  ]
 }
